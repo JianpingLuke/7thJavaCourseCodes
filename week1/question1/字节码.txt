@@ -1,0 +1,147 @@
+public class Hello
+  minor version: 0
+  major version: 60
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #19                         // Hello
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = Methodref          #14.#15        // java/io/PrintStream.println:(I)V
+  #14 = Class              #16            // java/io/PrintStream
+  #15 = NameAndType        #17:#18        // println:(I)V
+  #16 = Utf8               java/io/PrintStream
+  #17 = Utf8               println
+  #18 = Utf8               (I)V
+  #19 = Class              #20            // Hello
+  #20 = Utf8               Hello
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               LHello;
+  #26 = Utf8               main
+  #27 = Utf8               ([Ljava/lang/String;)V
+  #28 = Utf8               c
+  #29 = Utf8               I
+  #30 = Utf8               i
+  #31 = Utf8               args
+  #32 = Utf8               [Ljava/lang/String;
+  #33 = Utf8               numInt
+  #34 = Utf8               numShort
+  #35 = Utf8               S
+  #36 = Utf8               numLong
+  #37 = Utf8               J
+  #38 = Utf8               numFloat
+  #39 = Utf8               F
+  #40 = Utf8               numDouble
+  #41 = Utf8               D
+  #42 = Utf8               numByte
+  #43 = Utf8               B
+  #44 = Utf8               a
+  #45 = Utf8               C
+  #46 = Utf8               flag
+  #47 = Utf8               Z
+  #48 = Utf8               StackMapTable
+  #49 = Class              #32            // "[Ljava/lang/String;"
+  #50 = Utf8               SourceFile
+  #51 = Utf8               Hello.java
+{
+  public Hello();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LHello;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=13, args_size=1
+         0: iconst_1
+         1: istore_1
+         2: iconst_1
+         3: istore_2
+         4: lconst_1
+         5: lstore_3
+         6: fconst_1
+         7: fstore        5
+         9: dconst_1
+        10: dstore        6
+        12: iconst_1
+        13: istore        8
+        15: bipush        49
+        17: istore        9
+        19: iconst_1
+        20: istore        10
+        22: iconst_0
+        23: istore        11
+        25: iload         11
+        27: iconst_5
+        28: if_icmpge     51
+        31: iconst_1
+        32: iload         11
+        34: iadd
+        35: istore        12
+        37: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        40: iload         12
+        42: invokevirtual #13                 // Method java/io/PrintStream.println:(I)V
+        45: iinc          11, 1
+        48: goto          25
+        51: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 2
+        line 5: 4
+        line 6: 6
+        line 7: 9
+        line 8: 12
+        line 9: 15
+        line 10: 19
+        line 11: 22
+        line 13: 31
+        line 14: 37
+        line 11: 45
+        line 17: 51
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           37       8    12     c   I
+           25      26    11     i   I
+            0      52     0  args   [Ljava/lang/String;
+            2      50     1 numInt   I
+            4      48     2 numShort   S
+            6      46     3 numLong   J
+            9      43     5 numFloat   F
+           12      40     6 numDouble   D
+           15      37     8 numByte   B
+           19      33     9     a   C
+           22      30    10  flag   Z
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 25
+          locals = [ class "[Ljava/lang/String;", int, int, long, float, double, int, int, int, int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 25
+}
+SourceFile: "Hello.java"
+
